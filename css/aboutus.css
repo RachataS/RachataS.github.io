@@ -1,24 +1,38 @@
-.centered-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.social-margin {
-    margin-left: 20px;
-    color: white;
-    text-decoration: none
-}
-
+/* Styling for profile image */
 #profile-img {
     border-radius: 50%;
     object-fit: cover;
     width: 300px;
     height: 300px;
-    border: 10px solid gray;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    margin: 10px;
 }
 
-#profile-section {
-    display: grid;
-    grid-template-columns: 1.3fr 2.7fr;
+
+/* Styling for application images */
+.app-images {
+    border-radius: 90%;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    /* border: 5px solid rgba(0, 0, 0, 0.5); */
+    /* background-color: white; */
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*  Media query for larger screens (minimum width 900px) */
+@media screen and (min-width:900px) {
+    #profile-section {
+        display: grid;
+        grid-template-columns: 1.3fr 2.7fr;
+    }
 }

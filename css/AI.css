@@ -1,0 +1,93 @@
+/* Styling for navigation menu */
+nav ul {
+    top: 0;
+    position: fixed;
+}
+
+/* Styling for chat container */
+.chat {
+    padding: 30px;
+    max-height: calc(100vh - 200px);
+    overflow: scroll;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  Styling for user messages */
+.user {
+    text-align: right;
+    /* position: relative; */
+    clear: both;
+    display: inline-block;
+    padding: 16px 40px 16px 20px;
+    margin: 0 0 20px 0;
+    font: 16px/20px 'Noto Sans', sans-serif;
+    border-radius: 10px;
+    background-color: rgba(25, 112, 147, 0.2);
+}
+
+/* Styling for AI messages */
+.ai {
+    text-align: left;
+    /* position: relative; */
+    clear: both;
+    display: inline-block;
+    padding: 16px 40px 16px 20px;
+    margin: 0 0 20px 0;
+    font: 16px/20px 'Noto Sans', sans-serif;
+    border-radius: 10px;
+    background-color: rgba(25, 112, 147, 0.2);
+}
+
+/* Styling for question input */
+#questionInput {
+    width: 50%;
+    height: 48px;
+    font-size: 16px;
+    background: none;
+    color: #0a95d5;
+    border: 0;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+/* Styling for ask button */
+#askButton {
+    background: #24598a;
+    text-transform: uppercase;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 11px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline: none !important;
+    transition: background .2s ease;
+
+    &:hover {
+        background: #1D7745;
+    }
+}
+
+/* Styling for bottom section */
+#bottom {
+    position: fixed;
+    flex-direction: row;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+/* Styling for AI hello message */
+#ai-hello {
+    margin-top: 80px;
+    text-align: center;
+}

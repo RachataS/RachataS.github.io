@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tonnam AI</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/AI.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <header>
+                    Tonnam 1.0
+                </header>
+            </li>
+            <li><a href="aboutUs.html" class="menu">About Us</a></li>
+            <li><a href="TonnamAI.html" class="active">Tonnam AI</a></li>
+            <li><a href="index.html" class="menu">Home</a></li>
+        </ul>
+    </nav>
+    <h3 id="ai-hello">
+        How can i help you.
+    </h3>
+    <div class="chat" id="chatContainer">
+
+    </div>
+    <scroll id="scroll"><br><br><br> </scroll>
+    <div id="bottom">
+        <input type="text" id="questionInput" placeholder="Type your question here...">
+        <button id="askButton" onclick="askQuestion()">Ask</button>
+    </div>
+    <script src="./javaScript/AI.js"></script>
+</body>
+
+</html>

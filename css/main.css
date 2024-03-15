@@ -1,61 +1,171 @@
+/*Importing Google Fonts - Noto Sans*/
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans';
+
+/* Body styling*/
 body {
+    margin: 0px;
+    padding: 0px;
     width: 100%;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: black;
+    font: 16px 'Noto Sans', sans-serif;
+    background: -moz-linear-gradient(-45deg, #183850 0, #183850 25%, #192C46 50%, #22254C 75%, #22254C 100%);
+    background: -webkit-linear-gradient(-45deg, #183850 0, #183850 25%, #192C46 50%, #22254C 75%, #22254C 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
 }
 
-header {
-    display: flex;
-    padding: 10px 0px;
-    font-size: 1.5em;
-    justify-content: center;
+/* Styling for headers within list items*/
+li header {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: inline-start;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 20px 20px 10px;
-    padding: 10px;
-    font-size: 20px;
-    background-color: grey;
+/* Navigation styling*/
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
 
-    li:nth-child(3) {
-        margin-left: auto;
+    /* Styling for the first child list item*/
+    li:nth-child(1) {
+        margin-right: auto;
     }
 }
 
-li {
-    list-style: none;
-    margin: 0 10px;
+/* Styling for anchor tags within list items*/
+li a {
+    font-size: 14px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: inline-end;
 }
 
+/* Hover effect for anchor tags except the active one*/
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* Styling for active anchor tag*/
+li a.active {
+    background-color: #111;
+}
+
+/* Section styling*/
+section {
+    margin: 0px 5px;
+}
+
+/* Aside styling*/
+aside {
+    margin: 10px;
+}
+
+/* Footer styling*/
 footer {
     display: flex;
     justify-content: center;
-    background-color: gray;
     padding: 10px;
-    margin: 20px 20px 20px 10px;
+    background: rgba(0, 0, 0, 0.3);
 }
 
+/* Styling for menu links*/
 .menu {
     color: white;
-    font-weight: bold;
     text-decoration: none;
 }
 
-/* responsive when width >750 */
-@media screen and (min-width:750px) {
+/* Styling for AI icon image*/
+#AI-icon {
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    width: 50%;
+    /* Default image size */
+    height: auto;
+    margin: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styling for AI image*/
+.AI-img {
+    width: 300px;
+    /* Default image size for small screens */
+    height: auto;
+    margin: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Styling for PS image*/
+#ps-img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styling for more details*/
+.more-detail {
+    color: white;
+    font-size: 16px;
+}
+
+/*Styling for references*/
+.ref {
+    font-size: 16px;
+}
+
+/*Styling for video container*/
+.video-container {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    mask-border: 0;
+}
+
+/* Styling for images within aside*/
+.aside-img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media query for larger screens (minimum width 900px)*/
+@media screen and (min-width:900px) {
     .mainGrid {
         display: grid;
         grid-template-columns: 3fr 1fr;
         gap: 20px;
         padding: 20px;
     }
+
+    /* Edit font size for larger screens */
+    li header {
+        font-size: 16px;
+    }
+
+    li a {
+        font-size: 16px;
+    }
+
+    .video-container {
+        width: 500px;
+        height: 300px;
+    }
 }
 
-/* responsive when width >1400 */
+/* Media query for very large screens (minimum width 1400px)*/
 @media screen and (min-width:1400px) {
     .mainGrid {
         display: grid;
@@ -68,4 +178,25 @@ footer {
         display: grid;
         grid-template-columns: 50% 50%;
     }
+
+}
+
+/*Styling for centered text*/
+.centered-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Styling for general anchor tags*/
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Styling for margin of aside elements*/
+.aside-margin {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
 }
