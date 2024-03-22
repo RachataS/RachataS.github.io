@@ -21,12 +21,12 @@
     margin: 0 auto;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+
+
+#profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*  Media query for larger screens (minimum width 900px) */
@@ -34,5 +34,15 @@ footer {
     #profile-section {
         display: grid;
         grid-template-columns: 1.3fr 2.7fr;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
     }
 }

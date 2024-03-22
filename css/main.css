@@ -99,7 +99,7 @@ footer {
 
 /* Styling for AI image*/
 .AI-img {
-    width: 300px;
+    width: 50%;
     /* Default image size for small screens */
     height: auto;
     margin: 10px;
