@@ -105,7 +105,8 @@ footer {
 
 /* Styling for AI image*/
 .AI-img {
-    width: 50%;
+    width: 40%;
+    height: auto;
     /* Default image size for small screens */
     height: auto;
     margin: 10px;
@@ -115,7 +116,7 @@ footer {
 
 /*Styling for PS image*/
 #ps-img {
-    width: 100px;
+    width: 70px;
     height: auto;
     margin: 10px;
     display: block;

@@ -59,7 +59,7 @@ nav ul {
     border-radius: 12px;
     border: none;
     color: white;
-    padding: 11px 50px;
+    padding: 11px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -68,10 +68,19 @@ nav ul {
     cursor: pointer;
     outline: none !important;
     transition: background .2s ease;
+}
 
-    &:hover {
-        background: #1D7745;
+/* Media query for screen size larger than 900px */
+@media screen and (min-width: 900px) {
+    #askButton {
+        padding: 11px 50px;
+        /* Adjust padding for larger screens */
     }
+}
+
+/* Hover effect */
+#askButton:hover {
+    background: #1D7745;
 }
 
 /* Styling for bottom section */
