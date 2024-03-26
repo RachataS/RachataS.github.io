@@ -62,9 +62,15 @@ li a.active {
     background-color: #111;
 }
 
-/* Section styling*/
-section {
-    margin: 0px 5px;
+content {
+    section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Aside styling*/
@@ -139,6 +145,16 @@ footer {
 .aside-img {
     width: 30px;
     height: 30px;
+}
+
+@media screen and (max-width:900px) {
+    section {
+        padding: 5%;
+    }
+
+    h3 {
+        padding: 5%;
+    }
 }
 
 /* Media query for larger screens (minimum width 900px)*/
